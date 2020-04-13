@@ -1,7 +1,3 @@
-* {
-	font-family: arial;
-}
-
 body {
 	padding: 0;
 	margin: 0;
@@ -10,7 +6,7 @@ body {
 
 body::after {
 	content: "";
-	background-image: url(../img/background.jpg);
+	background-image: url(../img/background.png);
 	background-attachment: fixed;
 	opacity: 0.15;
 	top: 0;
@@ -22,55 +18,74 @@ body::after {
 
 }
 
-.container {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 980px;
-}
+
 
 /*header start*/
 .header {
+	font-family: Arial;
 	background-color: rgba(255,255,255,0.8);
 	box-shadow: 0 0 10px rgba(0,0,0,0.25);
 	padding: 25px;
+	margin-bottom: 25px;
 }
 
 .header-container {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	font-size: 28px;
-	max-width: 980px;
+	width: 980px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.header-logo {
-	border-width: 1px;
-	font-weight: 900;
-}
-
 .header-text {
-
+	font-size: 34px;
+	font-weight: bold;
 }
 
 .header-contacts {
+	font-size: 16px;
+}
 
+.contacts-phone {
+	margin-bottom: 8px;
+}
+
+.provider-icon {
+	position: relative;
+	vertical-align: bottom;
+	height: 20px;
+	width: 20px;
+}
+
+.contacts-email {
+	color: black;
+}
+
+.contacts-email:hover {
+	color:red;
 }
 /*header end*/
 
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+}
 
 /*content start*/
 .content {
 	display: flex;
 	justify-content: space-around;
-	padding: 15px;
-
+	
 }
 
 .item {
+	font-family: Roboto;
 	background-color: white;
-	padding: 10px;
-	width: 46%;
+	margin: 10px;
+	padding: 20px;
+	width: 48%;
 	border-width: 2px;
 	border-color: red;
 	border-style: solid;
@@ -78,6 +93,9 @@ body::after {
 }
 
 .item-code {
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -90,8 +108,14 @@ body::after {
 }
 
 .item-name {
+	margin-bottom: 5px;
 	font-weight: 900;
-	font-color: black;
+	
+}
+
+.item-article {
+	font-style: italic;
+	color: grey;
 }
 
 .item-description {
@@ -102,6 +126,28 @@ body::after {
 
 /*footer start*/
 .footer {
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	padding: 25px;
+	margin-top: 25px;
+	font-family: Arial;
+}
 
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer-certificate {
+	color:black;
+}
+
+.footer-certificate:hover {
+	color:red;
 }
 /*footer end*/
