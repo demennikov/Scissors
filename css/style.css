@@ -39,8 +39,8 @@ body::after {
 }
 
 .header-text {
+	font-family: Orbitron;
 	font-size: 34px;
-	font-weight: bold;
 }
 
 .header-contacts {
@@ -67,14 +67,14 @@ body::after {
 }
 /*header end*/
 
-.container {
+.content-container {
 	margin-left: auto;
 	margin-right: auto;
 	width: 980px;
 }
 
 /*content start*/
-.content {
+.content-flex {
 	display: flex;
 	justify-content: space-around;
 	
