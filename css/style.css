@@ -19,7 +19,6 @@ body::after {
 }
 
 
-
 /*header start*/
 .header {
 	font-family: Arial;
@@ -108,8 +107,9 @@ body::after {
 }
 
 .item-name {
-	margin-bottom: 5px;
+	padding-bottom: 5px;
 	font-weight: 900;
+	font-size: 22px;
 	
 }
 
@@ -119,7 +119,15 @@ body::after {
 }
 
 .item-description {
+	
+}
 
+.item-description ul {
+	padding: 0 0 0 20px;
+}
+
+.item-description ul li {
+	padding-bottom: 8px;
 }
 /*content end*/
 
